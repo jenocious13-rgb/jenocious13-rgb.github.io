@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisca Jenocious | Data Analyst Portfolio</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #24332b;
+            background: #f7faf7;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        nav h2 {
+            color: #496653;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #34483b;
+            margin-left: 22px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #6d8b76;
+        }
+
+        section {
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero p:first-child {
+            color: #6d8b76;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            margin: 12px 0;
+            color: #24382b;
+        }
+
+        .hero h3 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #5d6d62;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+            color: #59655d;
+            font-size: 1.05rem;
+        }
+
+        .buttons {
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #587562;
+            color: white;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #587562;
+            border: 1px solid #587562;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #304b39;
+        }
+
+        .about {
+            background: #edf4ee;
+            max-width: none;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about p {
+            color: #59655d;
+            max-width: 800px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #d8e3da;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            border: 1px solid #e2e9e3;
+        }
+
+        .project-card h3 {
+            color: #3e5d48;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #626c65;
+            margin-bottom: 18px;
+        }
+
+        .project-card a {
+            color: #587562;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact {
+            text-align: center;
+            background: #edf4ee;
+            max-width: none;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #59655d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #24382b;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Jenocious</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <p>HELLO, I'M</p>
+
+    <h1>Francisca Jenocious</h1>
+
+    <h3>Aspiring Data Analyst | AI & Data Science Student</h3>
+
+    <p class="hero-text">
+        I’m a B.Tech AI & Data Science student passionate about turning
+        raw data into meaningful insights. I work with Python, SQL,
+        Power BI and data visualization to clean, analyze and communicate
+        data effectively.
+    </p>
+
+    <div class="buttons">
+        <a class="btn" href="#projects">View My Projects</a>
+        <a class="btn secondary"
+           href="https://github.com/jenocious13-rgb"
+           target="_blank">
+            GitHub
+        </a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am a B.Tech AI & Data Science student with internship
+            experience in Python, Power BI and data visualization.
+            I enjoy working with data cleaning, exploratory analysis,
+            dashboard development and data-driven problem solving.
+        </p>
+
+        <br>
+
+        <p>
+            My current focus is building practical projects that combine
+            data analytics with AI and modern development tools.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Power Query</span>
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Data Cleaning</span>
+        <span class="skill">Generative AI</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>QueryGenius</h3>
+
+            <p>
+                AI-powered PostgreSQL query performance analyzer that
+                uses EXPLAIN ANALYZE and an LLM to identify performance
+                bottlenecks and suggest safer optimization strategies.
+            </p>
+
+            <a href="https://github.com/jenocious13-rgb/querygenius"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Train Schedule Analysis</h3>
+
+            <p>
+                Analyzed 165,556 train schedule records using Python
+                and Google Colab. Performed data cleaning, exploratory
+                analysis and visualization to identify operational trends.
+            </p>
+
+            <a href="https://github.com/jenocious13-rgb"
+               target="_blank">
+                View Projects →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Customer Churn Analysis Dashboard</h3>
+
+            <p>
+                Built an interactive Power BI dashboard for 7,043
+                customer records. Used Power Query, KPI cards and
+                visualizations to analyze customer churn patterns.
+            </p>
+
+            <a href="https://github.com/jenocious13-rgb"
+               target="_blank">
+                View Projects →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p>
+        Interested in data analytics, AI and building practical
+        data-driven solutions.
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        jenocious13@gmail.com
+    </p>
+
+    <div class="buttons">
+        <a class="btn"
+           href="https://github.com/jenocious13-rgb"
+           target="_blank">
+            GitHub
+        </a>
+
+        <a class="btn secondary"
+           href="https://www.linkedin.com/in/francisca-jenocious"
+           target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Francisca Jenocious • Data Analytics & AI
+</footer>
+
+</body>
+</html>
